@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" fx:id="plany_vyberu_predmetov_anchorpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+  <children>
+    <Label fx:id="plany_vyberu_predmetov_label" layoutX="220.0" layoutY="39.0" text="Plány výberu predmetov" />
+    <Button fx:id="aktualizacia_udajov_z_aisu_button" layoutX="365.0" layoutY="91.0" mnemonicParsing="false" onAction="#on_action_aktualizacia_udajov_z_aisu_button" text="Aktualizácia údajov z AISU" />
+    <Button fx:id="spat_button" layoutX="39.0" layoutY="345.0" mnemonicParsing="false" onAction="#on_action_spat_button" text="Späť" />
+    <ListView id="Volitelne_predmety_z_db_listview" fx:id="volitelne_predmety_z_db_listview" layoutX="136.0" layoutY="145.0" prefHeight="200.0" prefWidth="329.0" />
+    <Label id="Volitelne_predmety_z_db_label" fx:id="volitelne_predmety_z_db_label" layoutX="55.0" layoutY="95.0" text="Voliteľné predmety z DB:" />
+  </children>
+</AnchorPane>

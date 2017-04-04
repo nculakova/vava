@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" fx:id="predmety_anchorpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+  <children>
+    <ListView fx:id="predmety_listview" editable="true" layoutX="65.0" layoutY="100.0" onKeyReleased="#on_key_released_predmety_listview" onMouseReleased="#on_mouse_released_predmety_listview" orientation="VERTICAL" prefHeight="200.0" prefWidth="284.0" />
+    <Label fx:id="predmety_label" layoutX="65.0" layoutY="44.0" text="Predmety:" />
+    <Button fx:id="ok_button" layoutX="475.0" layoutY="337.0" mnemonicParsing="false" text="OK" />
+    <Button fx:id="spat_button" layoutX="388.0" layoutY="337.0" mnemonicParsing="false" onAction="#on_action_spat_button" text="Späť" />
+  </children>
+</AnchorPane>

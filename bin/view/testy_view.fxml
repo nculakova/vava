@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" fx:id="testy_anchorpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="679.0" prefWidth="835.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+  <children>
+    <Label fx:id="testy_label" layoutX="395.0" layoutY="51.0" text="Testy">
+      <font>
+        <Font size="20.0" />
+      </font>
+    </Label>
+    <TextArea id="odpoved_textarea" fx:id="otazka_textarea" layoutX="77.0" layoutY="509.0" prefHeight="81.0" prefWidth="229.0" wrapText="true" />
+    <TextArea id="odpoved_textarea" fx:id="nova_odpoved_textarea" layoutX="429.0" layoutY="509.0" prefHeight="81.0" prefWidth="228.0" wrapText="true" />
+    <Label fx:id="otazka_label" layoutX="79.0" layoutY="472.0" text="Otázka:" />
+    <Label fx:id="nova_odpoved_label" layoutX="429.0" layoutY="472.0" text="Odpoveď:" />
+    <Button fx:id="pridat_button" layoutX="693.0" layoutY="563.0" mnemonicParsing="false" onAction="#on_action_pridat_button" text="Pridať" />
+    <Button fx:id="spat_button" layoutX="49.0" layoutY="610.0" mnemonicParsing="false" onAction="#on_action_spat_button" text="Späť" />
+    <ChoiceBox fx:id="test_choicebox" layoutX="432.0" layoutY="125.0">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Item 1" />
+          <String fx:value="Item 2" />
+          <String fx:value="Item 3" />
+        </FXCollections>
+      </items>
+    </ChoiceBox>
+    <Label fx:id="test_label" layoutX="432.0" layoutY="99.0" text="Test:" />
+    <Button fx:id="pridat_novy_test_button" layoutX="540.0" layoutY="125.0" mnemonicParsing="false" onAction="#on_action_pridat_novy_test_button" text="Pridať nový test" />
+    <Label fx:id="rok_label" layoutX="268.0" layoutY="99.0" text="Rok:" />
+    <ChoiceBox fx:id="rok_choicebox" layoutX="268.0" layoutY="125.0">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Item 1" />
+          <String fx:value="Item 2" />
+          <String fx:value="Item 3" />
+        </FXCollections>
+      </items>
+    </ChoiceBox>
+    <Label fx:id="nova_otazka_label" layoutX="373.0" layoutY="434.0" text="Nová otázka" />
+    <Button fx:id="zvolit_rok_button" layoutX="283.0" layoutY="163.0" mnemonicParsing="false" onAction="#on_action_zvolit_rok_button" text="Zvoliť" />
+    <Button fx:id="zvolit_test_button" layoutX="447.0" layoutY="163.0" mnemonicParsing="false" onAction="#on_action_zvolit_test_button" text="Zvoliť" />
+    <ListView fx:id="otazky_listview" layoutX="80.0" layoutY="250.0" prefHeight="162.0" prefWidth="200.0" />
+    <Label fx:id="otazky_label" layoutX="80.0" layoutY="218.0" text="Otázky:" />
+    <Label fx:id="odpoved_label" layoutX="423.0" layoutY="218.0" text="Odpoveď:" />
+    <TextArea fx:id="odpoved_textarea" editable="false" layoutX="423.0" layoutY="250.0" prefHeight="162.0" prefWidth="228.0" wrapText="true" />
+    <Label fx:id="predmet_label" layoutX="80.0" layoutY="99.0" text="Pedmet:" />
+    <ChoiceBox fx:id="predmet_choicebox" layoutX="80.0" layoutY="126.0" maxWidth="-Infinity" opacity="1.0" prefWidth="95.0" style="">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Item 1" />
+          <String fx:value="Item 2" />
+          <String fx:value="Item 3" />
+        </FXCollections>
+      </items>
+    </ChoiceBox>
+    <Button fx:id="zvolit_predmet_button" layoutX="95.0" layoutY="163.0" mnemonicParsing="false" onAction="#on_action_zvolit_predmet_button" text="Zvoliť" />
+  </children>
+</AnchorPane>

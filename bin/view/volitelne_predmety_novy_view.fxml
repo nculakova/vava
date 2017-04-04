@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" fx:id="volitelne_predmety_novy_anchorpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="583.0" prefWidth="757.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+  <children>
+    <ListView fx:id="volitelne_predmety_listview" layoutX="371.0" layoutY="252.0" prefHeight="224.0" prefWidth="300.0" />
+    <Button fx:id="pridat_button" layoutX="147.0" layoutY="364.0" mnemonicParsing="false" onAction="#on_action_pridat_button" text="Pridať" />
+    <Label fx:id="semester_label" layoutX="260.0" layoutY="158.0" text="Semester:" />
+    <TextField fx:id="nazov_textfield" layoutX="271.0" layoutY="105.0" prefWidth="200.0" />
+    <Label fx:id="nazov_label" layoutX="208.0" layoutY="108.0" text="Nazov:" />
+    <Button fx:id="ulozit_button" layoutX="643.0" layoutY="519.0" mnemonicParsing="false" onAction="#on_action_ulozit_button" text="Uložiť" />
+    <Button fx:id="spat_button" layoutX="564.0" layoutY="519.0" mnemonicParsing="false" onAction="#on_action_spat_button" text="Späť" />
+    <Label fx:id="volitelne_predmety_label" layoutX="115.0" layoutY="272.0" text="Voliteľné predmety:" />
+    <ChoiceBox fx:id="semester_choicebox" layoutX="331.0" layoutY="156.0" prefWidth="131.0">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Item 1" />
+          <String fx:value="Item 2" />
+          <String fx:value="Item 3" />
+        </FXCollections>
+      </items>
+    </ChoiceBox>
+    <ChoiceBox fx:id="volitelne_predmety_choicebox" layoutX="50.0" layoutY="311.0" prefWidth="261.0">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Item 1" />
+          <String fx:value="Item 2" />
+          <String fx:value="Item 3" />
+        </FXCollections>
+      </items>
+    </ChoiceBox>
+    <Button fx:id="zvolit_button" layoutX="479.0" layoutY="158.0" mnemonicParsing="false" onAction="#on_action_zvolit_button" text="Zvoliť" />
+  </children>
+</AnchorPane>

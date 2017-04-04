@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" fx:id="login_anchorpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+  <children>
+    <Label fx:id="prihlasovacie_meno_label" layoutX="88.0" layoutY="138.0" text="Prihlasovacie meno:" />
+    <Label fx:id="heslo_label" layoutX="88.0" layoutY="177.0" text="Heslo:" />
+    <TextField fx:id="prihlasovacie_meno_textfield" layoutX="228.0" layoutY="135.0" prefWidth="200.0" />
+    <PasswordField id="heslo_textfield" fx:id="heslo_passwordfield" layoutX="228.0" layoutY="174.0" prefWidth="200.0" />
+    <Button fx:id="prihlasit_sa_button" layoutX="279.0" layoutY="234.0" mnemonicParsing="false" onAction="#on_action_prihlasit_sa_button" text="Prihlásiť sa" />
+  </children>
+</AnchorPane>
